@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="gallery-heading">Image Gallery</h1>
+    <div class="gallery">
+      <div class="image" onclick="openPopup('https://picsum.photos/200/300')">
+        <img src="https://picsum.photos/200/300" alt="Image 1">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/301')">
+        <img src="https://picsum.photos/200/301" alt="Image 2">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/302')">
+        <img src="https://picsum.photos/200/302" alt="Image 3">
+      </div>
+      <!-- Second Row -->
+      <div class="image" onclick="openPopup('https://picsum.photos/200/303')">
+        <img src="https://picsum.photos/200/303" alt="Image 4">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/304')">
+        <img src="https://picsum.photos/200/304" alt="Image 5">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/305')">
+        <img src="https://picsum.photos/200/305" alt="Image 6">
+      </div>
+        <!-- Third Row -->
+      <div class="image" onclick="openPopup('https://picsum.photos/200/306')">
+        <img src="https://picsum.photos/200/306" alt="Image 7">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/307')">
+        <img src="https://picsum.photos/200/307" alt="Image 8">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/308')">
+        <img src="https://picsum.photos/200/308" alt="Image 9">
+      </div>
+      <!-- Fourth Row -->
+      <div class="image" onclick="openPopup('https://picsum.photos/200/309')">
+        <img src="https://picsum.photos/200/309" alt="Image 10">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/310')">
+        <img src="https://picsum.photos/200/310" alt="Image 11">
+      </div>
+      <div class="image" onclick="openPopup('https://picsum.photos/200/311')">
+        <img src="https://picsum.photos/200/311" alt="Image 12">
+      </div>
+    </div>
+
+    <!-- Popup Container -->
+    <div id="popupContainer" class="popup-container" onclick="closePopup()">
+      <div id="popupContent" class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img id="popupImage" src="" alt="Popup Image">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
